@@ -1,7 +1,11 @@
 import express from 'express';
 import { MongoClient } from 'mongodb';
 import * as dotenv from 'dotenv';
+import cors from "cors"
+
 dotenv.config()
+
+app.use(cors())
 
 const app = express();
 const PORT=5000;
