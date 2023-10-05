@@ -75,7 +75,7 @@ const newProducts = req.body;
 
 //update products
 
-app.post('/product', async (req, res)=>{
+app.put('/product', async (req, res)=>{
   const {id}=req.params;
   //where we will pass data-body
   const updateProducts = req.body;
