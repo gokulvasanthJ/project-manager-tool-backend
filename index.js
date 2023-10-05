@@ -87,7 +87,6 @@ app.use(express.json());
 //   });    
 
 
-// app.listen(PORT,()=>console.log("Hello World",PORT)); 
 
 
 // GET Product by ID
@@ -150,3 +149,6 @@ app.put('/product/:id', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+
+
+app.listen(PORT,()=>console.log("Hello World",PORT)); 
